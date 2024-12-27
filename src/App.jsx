@@ -35,7 +35,11 @@ const App = () => {
           : "هل سئمت من النصوص المملة؟"}
       </h4>
 
-      <form className="lorem-form" onSubmit={handleSubmit}>
+      <form
+        className="lorem-form "
+        dir={language === "en" ? " ltr" : language === "ar" ? "rtl" : ""}
+        onSubmit={handleSubmit}
+      >
         <label htmlFor="amount">
           {language === "en" ? "Paragraphs:" : " الفقرات:"}
         </label>
