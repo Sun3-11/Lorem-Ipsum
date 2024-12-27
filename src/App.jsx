@@ -77,13 +77,7 @@ const App = () => {
         </button>
       </form>
 
-      <article className="lorem-text">
-        {/* <p>
-          <strong>
-            {language === "en" ? "Type: " : "النوع: "}
-            {type}
-          </strong>
-        </p> */}
+      <article className="lorem-text" lang={language}>
         {textData.map((item) => {
           return (
             <div key={nanoid()}>
